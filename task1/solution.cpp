@@ -89,9 +89,9 @@ int main()
 
     cv::Mat img_f;
     img.convertTo(img_f, CV_64FC1);
-filter2D(img_f, output, -1, K1); 
-                 // Convolve with original 'full' kernel
-     filter2D(img_f, output2, -1, K2);
+// filter2D(img_f, output, -1, K1); 
+//                  // Convolve with original 'full' kernel
+//      filter2D(img_f, output2, -1, K2);
     // Declare matrix to store intermediate image
     // TODO: apply K1 and K2 to img_f with as few multiplications per pixel as possible.
     // Print the number of multiplications your approach uses per pixel.
